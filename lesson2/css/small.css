@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Source+Code+Pro&display=swap");
+
+body {
+    max-width: 960px;
+    font-family: "Castoro", "Playfair Display", serif;
+    font-size: 1.2em;
+    color: black;
+    margin: auto;
+    line-height: 1.8;
+    text-align: center;  
+}
+/* phone or baseline views 
+**************************/
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main section {
+    margin: 0.5rem;
+    border: 1px solid #bbb;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+main section h2 {
+    background-color: #632A50;
+    color: white;
+    font-size: 15px;
+}
+
+p {
+    text-align: left;
+}
+
+h1 {
+    font-family: "Krona One", "Courier New", sans-serif;
+    font-size: 35px;
+    color: white; 
+}
+
+h2 {
+    font-family: "Krona One", "Courier New", sans-serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+    padding: 0.5em;
+  }
+
+header, footer {
+    background-color: #632A50;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+}
+header {
+    padding: 1rem;
+    font-size: 28px;
+}
+
+ .link, a {
+     color: white;
+ }
+ .link1, .link2, .link3 {
+     color: black;
+ }
+ 
+
+
+
+
