@@ -9,5 +9,5 @@ myFunction()
 
 function toggleMenu() {
     
-    document.getElementById("primaryNav").classlist.toggle("hide");
+    document.getElementById("primaryNav").classList.toggle("hide");
 }
