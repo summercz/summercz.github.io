@@ -55,6 +55,16 @@ nav button {
     font-size: 1.6rem;
     color: black;
 }
+
+nav a {
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+nav Menu {
+    font-size: 1rem;
+}
+ 
 nav {
     background-color: #f1f1f6;
     font-family: 'Krona One', 'Courier New', sans-serif;
@@ -111,6 +121,7 @@ h2 {
     border-radius: .5rem;
     border-style: solid;
     padding: 15px;
+    font-style: italic;
 }
 
 footer {
