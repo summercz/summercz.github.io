@@ -3,9 +3,13 @@
 
     nav button {display: none;}
 
-    nav ul.hide {display: block;}
+    nav ul.hide {display: flex;}
 
-    nav ul {margin-left: 2%;}
+    nav ul {
+        display: flex;
+        text-align: center;
+        white-space: nowrap;
+    }
 
     nav ul li {
         float: left;
