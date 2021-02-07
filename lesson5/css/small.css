@@ -16,7 +16,7 @@ body {
 #announcement, #display{
     display: flex;
     justify-content: center;
-    text-align: 10px;
+    text-align: center;
     background-color: #2198e8;
 }
 
@@ -82,7 +82,7 @@ nav ul li a {
     padding: .8rem 2%;
     text-decoration: none;
     color: black;
-    border-top: 1px solid rgba (0,0,0,0.3);
+    border-top: 1px solid #111;
 }
 
 nav ul li a:hover {background-color: #8B9EB7;}
