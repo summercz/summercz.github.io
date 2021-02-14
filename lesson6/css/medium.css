@@ -1,0 +1,104 @@
+@media only screen and (min-width: 700px) {
+
+    nav button {display: none;}
+
+    nav ul.hide {display: flex;}
+
+    nav ul {
+        display: flex;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    nav ul li {
+        float: left;
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .8rem 1rem;
+    }
+
+    header {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    header img {
+        width: 180px;
+    }
+
+    .headings {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headings h1 {
+        font-size: 3rem;
+    }
+
+    .motto {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-left: 17px;
+    }
+    
+    .herodiv {
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .weathersummary {
+        font-size: 100%;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    .forecast {
+        display: block;
+        margin: 5px;
+        padding: 15px;
+        color: black;
+    }
+
+    .article img {
+        max-width: 400px;
+        float: right;
+        margin: 18px;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    table {
+        width: 60%;
+        background-color: #f1f1f6;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    td img {
+        display: flex;
+        margin: 0 auto;
+        width: 25%;
+    }
+
+    th {
+        background-color: #2198e8;
+    }
+
+    .contactmap {
+        display: block;
+        margin: 0 auto;
+        float: left;
+        width: 30%;
+        border: 1px solid black;
+    }
+}
