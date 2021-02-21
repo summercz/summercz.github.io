@@ -28,8 +28,17 @@ if ("IntersectionObserver" in window) {
     imgObserver.observe(img);
   });
 } else { // just load all images if not supported
+  
+}
 
-  function myFunction() {
+function toggleMenu() {
+    
+  document.getElementById("primaryNav").classList.toggle("hide");
+}
+
+
+
+function myFunction() {
     // var ts = new Date();
     // console.log(ts.toDateString());
     document.getElementById("currentdate").innerHTML = new Date().toDateString();
@@ -38,8 +47,4 @@ if ("IntersectionObserver" in window) {
   
 myFunction()
 
-function toggleMenu() {
-    
-    document.getElementById("primaryNav").classList.toggle("hide");
-}
-}
+

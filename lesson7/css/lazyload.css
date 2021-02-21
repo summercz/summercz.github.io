@@ -7,7 +7,6 @@ picture img {
     filter: blur(0em);
     transition: filter 0.5s;
     margin: 0 auto;
-    border: 2px solid lightgray;
     padding: 5px;
     display: block;
 }

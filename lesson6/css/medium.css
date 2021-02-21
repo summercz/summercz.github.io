@@ -30,6 +30,7 @@
 
     header img {
         width: 180px;
+        border: none;
     }
 
     .headings {
@@ -92,6 +93,11 @@
 
     th {
         background-color: #2198e8;
+    }
+
+    .galleryImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .contactmap {
