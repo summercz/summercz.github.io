@@ -181,6 +181,8 @@ h2 {
     display: none;
 }
 
+/*----------Gallery-----------*/
+
 .galleryImages {
     display: grid;
     grid-template-columns: 1fr;
@@ -211,6 +213,8 @@ figcaption {
 
 .norm:hover {box-shadow: 0 0 50px #333;
 }
+
+/*-------------Footer-----------------*/
 
 footer {
     background-color: #632A50;
