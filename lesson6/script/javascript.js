@@ -10,7 +10,7 @@ myFunction()
 function toggleMenu() {
     
     document.getElementById("primaryNav").classList.toggle("hide");
-}
+  }
 
 var d = new Date ();
 var n = d.getDay ();
