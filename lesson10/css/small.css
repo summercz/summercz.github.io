@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Source+Code+Pro&display=swap");
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: "Castoro", "Playfair Display", serif;
+    font-size: 18px;
+    background-color: #8B9EB7;
+    color: black;
+    line-height: 1.5;
+    padding: 0.5rem;
+    margin: 0;
+}
+/* phone or baseline views 
+**************************/
+
+#announcement, #display{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #2198e8;
+}
+
+header {
+    background-color: #632A50;
+    padding: 0;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+header img {
+    width: 80px;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    font-family: 'Krona One', 'Courier New', sans-serif;
+    margin: 0 0 0 17px;
+    color: black;
+
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #8B9EB7;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+nav a {
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+nav Menu {
+    font-size: 1rem;
+}
+ 
+nav {
+    background-color: #f1f1f6;
+    font-family: 'Krona One', 'Courier New', sans-serif;
+    font-size: .8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid #111;
+}
+
+nav ul li a:hover {background-color: #8B9EB7;}
+
+nav ul li .active {
+    color:#632A50;
+}
+
+nav ul.hide {display: none;}
+
+.menu {
+    text-align: center;
+}
+
+
+main {
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 840px;
+}
+
+h2 {
+    text-align: center;
+    color: #632A50;
+}
+
+.herodiv {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.herodiv img {
+    width: 100%;
+    margin: 0 0 0 2%;
+}
+
+.weathersummary {
+    display: flex;
+    top: 20px;
+    left: 20px;
+	background: radial-gradient(#eee, #2198e8);
+	padding: 0.5rem;
+	box-shadow: 0 0 30px #111;
+    opacity: .8;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 8px;
+}
+.weathersummary h3 {
+    text-decoration: underline;
+}
+
+.forecast {
+    display: none;
+}
+
+
+.article {
+    padding: 0.5rem;
+}
+
+.article img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 0 0 20px #111;
+}
+ 
+.article p {
+    color: black;
+}
+
+.contactinfo {
+    color: #8B9EB7;
+    text-align: center;
+    padding: 2rem;
+    background: #632A50;
+}
+
+.contactinfo h3 {
+    text-decoration: underline;
+}
+
+.social img {
+    max-width: 35px;
+    padding: 0.5rem;
+}
+
+.contactmap {
+    display: none;
+}
+
+/*----------Gallery-----------*/
+
+.galleryImages {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+figure {
+    grid-column: auto;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 0 auto;
+    border: 2px solid lightgray;
+    padding: 5px;
+}
+
+figure img[data-src] {
+    filter: blur(5px);
+}
+
+figcaption {
+    text-align: center;
+    color: #632A50;
+}
+
+.norm:hover {box-shadow: 0 0 50px #333;
+}
+
+/*-------------Footer-----------------*/
+
+footer {
+    background-color: #632A50;
+    color: #8B9EB7;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 2px;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .link {
+        color:#8b9eb7;
+    }
+
+    /*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

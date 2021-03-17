@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+  <title>Your trustworthy weather resource: Forecastnow.us</title>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <meta name="description" content="Forecast.us is where you can find weather information for the Pacific Northwest area of the US." />
+  </head>
+
+  <body>
+      <div id="announcement">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park Pavilion.</p>
+      </div>
+
+      <header>
+          <picture>
+              <img src="images/logo.png" alt="logo">
+          </picture>
+          <section class="headings">
+          <h1>Forecast Now</h1>
+          <div class="motto">Your everyday weather forecast!</div>
+          </section>
+      </header>
+
+      <nav class="clearfix">
+        <div class="menu">
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          </div>
+          <ul id="primaryNav" class="hide">
+              <li><a href="../lesson9/index.html">Home</a></li>
+              <li><a href="preston-10.html" class="active">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+              <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+          </ul>
+      </nav>
+
+      <main>
+          <h2>Preston Idaho</h2>
+          <div class="herodiv">
+            <picture>
+              <source media="(min-width: 800px)" srcset="images/l06large.jpg">
+              <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/l06medium.jpg">
+              <source srcset="images/l06small.jpg">
+              <img src="images/l06small.jpg" alt="Hero Img">
+            </picture>
+    
+       <section class="weathersummary">
+              <h3>Weather Summary</h3>
+              <p>Currently: <span id="weather_description"></span> <span id="current_temp"></span><br>
+              High: <span id="high_temp"></span><br>
+              Wind Chill: <span id="windchill"></span><br>
+              Humidity: <span id="humidity"></span><br>
+              Wind Speed: <span id="windspeed"></span></p>
+            </section>
+          </div>
+
+          <div class="forecast">
+            <h2>5 Day Forecast</h2>
+            <table>
+              <tr>
+                <th><span id="day0"></span></th>
+                <th><span id="day1"></span></th>
+                <th><span id="day2"></span></th>
+                <th><span id="day3"></span></th>
+                <th><span id="day4"></span></th>
+              </tr>
+              <tr>
+                <td><img id="icon0" src="#"><span id="temp0"></span></td>
+                <td><img id="icon1" src="#"><span id="temp1"></span></td>
+                <td><img id="icon2" src="#"><span id="temp2"></span></td>
+                <td><img id="icon3" src="#"><span id="temp3"></span></td>
+                <td><img id="icon4" src="#"><span id="temp4"></span></td>
+              </tr>
+
+            </table>
+
+          </div>
+
+          <div class="article">
+            <h2>Winter in Preston</h2>
+            <img src="images/child.jpg" alt="child">
+            <p>If you’re looking for a laid-back, Old West feel then head to Preston in the winter where the town’s history of ranchers and cowboys is still very evident. <br>
+              If you’re a skier, you’ll be interested to know that Preston is regarded as having the best tree skiing in Idaho. Not to mention, it’s also known as Ski Town U.S.A. 
+              as it’s produced more winter Olympians of any other town. And if you prefer the outdoors after the weather’s warmed up, you’ll find plenty of hiking trails to explore 
+              as well as activities to do on and along the Yampa River, which runs through town. <br>
+              The elevation here is also much lower than some of the other towns on this list, so if you’re prone to altitude sickness then this is definitely something to consider. <br>
+               When you’re not on the slopes, however, you’ll want to head to Lincoln Avenue a.k.a. Main Street Steamboat. This is where you’ll get the iconic view of the mountain along with some good eats. 
+               Plus, you can snag some inexpensive ski rentals on Lincoln Ave. For example, Ski Haus offers low rates as well as a free shuttle to and from the shop.</p>
+          </div>
+          
+          <section class="contactinfo">
+            <img class="contactmap" src="images/map.png" alt="map">
+            <h3>Forecast Now</h3>
+            <p>9999 NE 88th St<br>
+            Bothell, WA, 98011<br>
+            425-999-9999<br>
+            contact@forecastnow.us</P>
+          
+          <div class="social">
+            <a href="https://www.facebook.com"
+               target="_blank"><img src="images/facebook.png" alt="facecbook logo"/></a>
+            <a href="https://www.instagram.com"
+               target="_blank"><img src="images/instagram.png" alt="instagram logo"/></a>
+            <a href="https://www.youtube.com"
+               target="_blank"><img src="images/youtube.png" alt="youtube logo"/></a>
+          </div> 
+          </section>
+
+      </main>
+
+      <footer>
+        <p>&copy; Forecast Now | Summer Chen |
+        <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a>
+        Current Date: <span id="currentdate"></span></p>
+      </footer>
+      <script src="script/javascript.js"></script>
+      <script src="script/windchill.js"></script>
+      <script src="script/weatherapi.js"></script>
+    </body>
+  </html>
