@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <title>Your trustworthy weather resource: Forecastnow.us</title>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/lazyload.css" />
+    <meta name="description" content="Forecast.us is where you can find weather information for the Pacific Northwest area of the US." />
+  </head>
+
+  <body>
+      <header>
+        <picture>
+            <img src="images/logo.png" alt="logo">
+        </picture>
+        <section class="headings">
+        <h1>Forecast Now</h1>
+        <div class="motto">Your everyday weather forecast!</div>
+        </section>
+      </header>
+
+    <nav class="clearfix">
+      <div class="menu">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        </div>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Weather Gallery</h2>
+        <div class="galleryImages">
+            <figure>
+                <img class="norm" src="images/placeholder.png" data-src="images/gallery-1.jpg" alt="gellery1">
+                <figcaption>Man standing on a snow path</figcaption>
+            </figure>
+            
+            <figure>
+                <img class="norm" src="images/placeholder.png" data-src="images/gallery-2.jpg" alt="gellery2">
+                <figcaption>Snow flake on a tree</figcaption>
+            </figure>
+
+            <figure>
+                <img class="norm" src="images/placeholder.png" data-src="images/gallery-3.jpg" alt="gellery3">
+                <figcaption>Cloud above a lake</figcaption>
+            </figure>
+
+            <figure>
+                <img class="norm" src="images/placeholder.png" data-src="images/gallery-4.jpg" alt="gellery4">
+                <figcaption>Cloud in blue sky</figcaption>
+            </figure>
+
+            <figure>
+                <img class="norm" src="images/placeholder.png" data-src="images/gallery-5.jpg" alt="gellery5">
+                <figcaption>Thunder above beach</figcaption>
+            </figure>
+
+            <figure>
+                <img class="norm" src="images/placeholder.png" data-src="images/gallery-6.jpg" alt="gellery6">
+                <figcaption>Rain in the city</figcaption>
+            </figure>
+
+            <figure>
+                <img class="norm" src="images/placeholder.png" data-src="images/gallery-7.jpg" alt="gellery7">
+                <figcaption>Snow covering on lodges</figcaption>
+            </figure>
+
+            <figure>
+                <img class="norm" src="images/placeholder.png" data-src="images/gallery-8.jpg" alt="gellery8">
+                <figcaption>Rainbow over windmills</figcaption>
+            </figure>
+
+            <figure>
+                <img class="norm" src="images/placeholder.png" data-src="images/gallery-9.jpg" alt="gellery9">
+                <figcaption>Sunset clouds</figcaption>
+            </figure>
+
+        </div>
+
+        <section class="contactinfo">
+            <img class="contactmap" src="images/map.png" alt="map" width="100" height="300">
+            <h3>Forecast Now</h3>
+            <p>9999 NE 88th St<br>
+            Bothell, WA, 98011<br>
+            425-999-9999<br>
+            contact@forecastnow.us</P>
+          
+          <div class="social">
+            <a href="https://www.facebook.com"
+               target="_blank"><img src="images/facebook.png" alt="facecbook logo"/></a>
+            <a href="https://www.instagram.com"
+               target="_blank"><img src="images/instagram.png" alt="instagram logo"/></a>
+            <a href="https://www.youtube.com"
+               target="_blank"><img src="images/youtube.png" alt="youtube logo"/></a>
+          </div> 
+          </section>
+
+      </main>
+
+      <footer>
+        <p>&copy; Forecast Now | Summer Chen |
+        <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a>
+        Current Date: <span id="currentdate"></span></p>
+      </footer>
+      <script src="script/javascript.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,16 @@
+h1 {
+    color:cornflowerblue;
+    text-align: center;
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 0 auto;
+    padding: 5px;
+    display: block;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+}
