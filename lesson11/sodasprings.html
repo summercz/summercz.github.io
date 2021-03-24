@@ -13,10 +13,6 @@
   </head>
 
   <body>
-      <div id="announcement">
-        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park Pavilion.</p>
-      </div>
-
       <header>
           <picture>
               <img src="images/logo.png" alt="logo">
@@ -32,9 +28,9 @@
           <button onclick="toggleMenu()">&#9776; Menu</button>
           </div>
           <ul id="primaryNav" class="hide">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="preston.html" class="active">Preston</a></li>
-            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html" class="active">Soda Springs</a></li>
             <li><a href="fishheaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -42,13 +38,13 @@
       </nav>
 
       <main>
-          <h2>Preston, Idaho</h2>
+          <h2>Soda Springs, Idaho</h2>
           <div class="herodiv">
             <picture>
-              <source media="(min-width: 800px)" srcset="images/l06large.jpg">
-              <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/l06medium.jpg">
-              <source srcset="images/l06small.jpg">
-              <img src="images/l06small.jpg" alt="Hero Img">
+              <source media="(min-width: 800px)" srcset="images/splarge.jpg">
+              <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/spmedium.jpg">
+              <source srcset="images/spsmall.jpg">
+              <img src="images/spsmall.jpg" alt="Hero Img">
             </picture>
     
        <section class="weathersummary">
@@ -87,20 +83,23 @@
             <h2>Upcoming Events</h2>
             <script src="script/events.js"></script>
             <script>
-              get_events("Preston");
+              get_events("Soda Springs");
             </script>
           </div>
 
+        
+
           <div class="article">
-            <h2>Winter in Preston</h2>
-            <img src="images/child.jpg" alt="child">
-            <p>If you’re looking for a laid-back, Old West feel then head to Preston in the winter where the town’s history of ranchers and cowboys is still very evident. <br>
-              If you’re a skier, you’ll be interested to know that Preston is regarded as having the best tree skiing in Idaho. Not to mention, it’s also known as Ski Town U.S.A. 
-              as it’s produced more winter Olympians of any other town. And if you prefer the outdoors after the weather’s warmed up, you’ll find plenty of hiking trails to explore 
-              as well as activities to do on and along the Yampa River, which runs through town. <br>
-              The elevation here is also much lower than some of the other towns on this list, so if you’re prone to altitude sickness then this is definitely something to consider. <br>
-               When you’re not on the slopes, however, you’ll want to head to Lincoln Avenue a.k.a. Main Street Steamboat. This is where you’ll get the iconic view of the mountain along with some good eats. 
-               Plus, you can snag some inexpensive ski rentals on Lincoln Ave. For example, Ski Haus offers low rates as well as a free shuttle to and from the shop.</p>
+            <h2>History of Soda Springs</h2>
+            <img src="images/gallery-8.jpg" alt="rainbow">
+            <p>Soda Springs has a rich history starting when the Pioneers headed west for California and Oregon. 
+              Due to the abundance of springs and water in the area, Soda Springs became known as the "Oregon Trail Oasis." 
+              The famous Steam Boat Springs and Hooper Springs, which was originally called "Beer Springs," 
+              were some of the main sites to be seen by the earlier settlers and travelers as well as the many sulfurous springs that many pioneers journaled about the smell coming from the them. 
+              The City later became further famous in 1937 when a well was being drilled in search of hot water for a bath house that unleashed what is known as the Geyser, 
+              which is the only captive Geyser in the world. <br>
+
+              Caribou Historical Society promoted the community’s history and help celebrate the Caribou County Centennial 1919-2019 please call Galen Wilson 208-547-2367 or Craig Shuler 208-547-3047 for more information</p>
           </div>
           
           <section class="contactinfo">
@@ -131,7 +130,7 @@
       <script src="script/javascript.js"></script>
       <script src="script/weatherapi.js"></script>
       <script>
-        fetch_weather(5604473);
+        fetch_weather(5607916);
       </script>
     </body>
   </html>

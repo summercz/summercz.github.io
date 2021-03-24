@@ -129,6 +129,24 @@ h2 {
     margin: auto;
 }
 
+.weathersummary {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background: radial-gradient(#eee, #8B9EB7);
+	box-shadow: 0 0 30px #111;
+    opacity: .8;
+
+}
+
+.events {
+    margin: 2rem;
+    border: 10px solid lightgray;
+    box-shadow: 0 0 20px gray;
+    font-size: 20px;
+    background-color: #2198e8;
+}
+
 /*----------------.cards---------------*/
 
 .cards {
