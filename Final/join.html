@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+  <title>Come to Visit Changshu</title>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <meta name="description" content="This is where you find business information about the city of Changshu." />
+  </head>
+
+  <body>
+
+      <header>
+          <picture>
+              <img src="images/Logo.png" alt="logo">
+          </picture>
+          <section class="headings">
+          <h1>Changshu Chamber of Commerce</h1>
+          <div class="motto">City|Business|People</div>
+          </section>
+      </header>
+
+      <nav class="clearfix">
+        <div class="menu">
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          </div>
+          <ul id="primaryNav" class="hide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="city.html">Changshu</a></li>
+              <li><a href="join.html" class="active">Join Us</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+
+      <main>
+        <h2>Membership Application</h2>
+        <form method="GET" action="jointhanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required
+                    pattern="[A-Za-z]{5,}"></label>
+                <label class="top">Last Name* <input type="text" name="lname" required
+                        pattern="[A-Za-z]{2,}"></label>
+                <label class="top">Title<input type="text" name="title"></label>
+                <label class="top">Email* <input type="emai" name="email" 
+                    placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone"
+                    placeholder="1235551234" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Business</legend>
+                <label class="top">Business Name*<input type="text" name="bizname" required></label>
+                <label class="top">Business Address<input type="text" name="bizaddress"></label>
+                <label class="top"> Business Website<input type="text" name="bizwebsite"></label>
+                <label class="comments">Business Description: <textarea name="bizdescription"
+                        placeholder="Description here:"></textarea></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Choose a Membership</legend>
+                <div class="levels">
+                    <h3>Level Benefits</h3>
+                    <p><i>Non-Profit</i> --- $100/year</p>
+                    <ul>
+                        <li> Directory listing twice a year</li>
+                        <li> Two luncheon tickets</li>
+                    </ul>
+                    <p><i>Bronze</i> --- $200/year</p>
+                    <ul>
+                        <li>Directory listing four times a year</li>
+                        <li>One traning seminar</li>
+                        <li>Six luncheon tickets</li>
+                    </ul>
+
+                    <p><i>Silver</i> --- $400/year</p>
+                    <ul>
+                        <li>Directory listing 8 times a year</li>
+                        <li>Social media posts</li>
+                        <li>two training sesions</li>
+                    </ul>
+
+                    <p><i>Gold</i> --- $1000/year</p>
+                    <ul>
+                        <li>Directory listing 12 times a year</li>
+                        <li>Social media advertizing</li>
+                        <li>two training session</li>
+                        <li>Sponsership to big city-wide events</li>
+                    </ul>
+                </div>
+
+                    <label>
+                        <select name="levels" id="selectlevel" onchange="selectResponse()">
+                            <option value="" disabled selected>Select a level &#9662; </option>
+                            <option value="Non-profit">Non-profit</option>
+                            <option value="Bronze">Bronze</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Gold">Gold</option>
+                            </select>
+                    </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Addional Info/Comments</legend>
+            <label class="comment">Share addional informaion or comments here
+                <textarea name="comment"></textarea></label>
+        </fieldset>
+
+        <input type="submit" value="Submit Your Application" class="submitBtn">
+
+    </form>
+
+      </main>
+
+      <footer>
+        <p>&copy; Changshu Chamber of Commerce | Summer Chen |
+        <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a>
+        Current Date: <span id="currentdate"></span></p>
+      </footer>
+      <script src="script/script.js"></script>
+      <script src="script/weatherapi.js"></script>
+      <script>
+        fetch_weather(7283386);
+      </script>
+    </body>
+  </html>

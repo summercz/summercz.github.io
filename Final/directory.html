@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+  <title>Come to Visit Changshu</title>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <meta name="description" content="This is where you find business information about the city of Changshu." />
+  </head>
+
+  <body>
+
+      <header>
+          <picture>
+              <img src="images/Logo.png" alt="logo">
+          </picture>
+          <section class="headings">
+          <h1>Changshu Chamber of Commerce</h1>
+          <div class="motto">City|Business|People</div>
+          </section>
+      </header>
+
+      <nav class="clearfix">
+        <div class="menu">
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          </div>
+          <ul id="primaryNav" class="hide">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="city.html">Changshu</a></li>
+              <li><a href="join.html">Join Us</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+
+      <footer>
+        <p>&copy; Changshu Chamber of Commerce | Summer Chen |
+        <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a>
+        Current Date: <span id="currentdate"></span></p>
+      </footer>
+      <script src="script/script.js"></script>
+      <script src="script/weatherapi.js"></script>
+      <script>
+        fetch_weather(7283386);
+      </script>
+    </body>
+  </html>

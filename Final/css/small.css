@@ -10,7 +10,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-family: "Castoro", "Playfair Display", serif;
     font-size: 18px;
-    background-color: #8B9EB7;
+    background-color: #EBF2FA;
     color: black;
     line-height: 1.5;
     padding: 0.5rem;
@@ -19,27 +19,32 @@ body {
 /* phone or baseline views 
 **************************/
 
-#announcement, #display{
+.alert {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #2198e8;
+    background-color: #FEC5BB;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
 }
 
 header {
-    background-color: #632A50;
+    background-color: #EBF2FA;
     padding: 0;
-    font-size: 18px;
-    width: 100%;
+    margin: 0;
     text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 100%;
 }
 
 header img {
-    width: 80px;
+    width: 200px;
 }
 
 .headings h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: 'Krona One', 'Courier New', sans-serif;
     margin: 0 0 0 17px;
     color: black;
@@ -47,12 +52,13 @@ header img {
 }
 
 .motto {
-    font-style: italic;
     letter-spacing: 1pt;
-    color: #8B9EB7;
+    color: black;
     margin-left: 20px;
     font-size: .9rem;
 }
+
+/*-------------Navigation------------------*/
 
 nav button {
     margin: .2rem 2%;
@@ -72,30 +78,30 @@ nav Menu {
 }
  
 nav {
-    background-color: #f1f1f6;
+    background-color: #09ACEC;
     font-family: 'Krona One', 'Courier New', sans-serif;
     font-size: .8rem;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     text-align: center;
 }
 
 nav ul li a {
     display: block;
-    padding: .8rem 2%;
+    padding: .5rem 2%;
     text-decoration: none;
     color: black;
-    border-top: 1px solid #111;
+    border-top: 2px solid #111;
 }
 
 nav ul li a:hover {background-color: #8B9EB7;}
 
 nav ul li .active {
-    color:#632A50;
+    color:#FEC5BB;
 }
 
 nav ul.hide {display: none;}
@@ -104,10 +110,11 @@ nav ul.hide {display: none;}
     text-align: center;
 }
 
+/*-----------------Main------------------*/
 
 main {
     margin: 0 auto;
-    padding: 30px;
+    padding: 1rem 0;
     display: grid;
     grid-template-columns: 1fr;
     max-width: 840px;
@@ -115,36 +122,57 @@ main {
 
 h2 {
     text-align: center;
-    color: #632A50;
+    color: black;
 }
 
 .herodiv {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .herodiv img {
-    max-width: 100%;
-    margin: auto;
+    max-width: 840px;
 }
 
-.weathersummary {
-    margin: 20px;
+.action {
+    width: 350px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    top: 20px;
+    left: 20px;
     padding: 20px;
     border: 1px solid black;
-    background: radial-gradient(#eee, #8B9EB7);
+    background: radial-gradient(#eee, #adc417);
 	box-shadow: 0 0 30px #111;
-    opacity: .8;
-
+    opacity: 0.7;
 }
 
-.events {
-    margin: 2rem;
-    border: 10px solid lightgray;
-    box-shadow: 0 0 20px gray;
-    font-size: 20px;
-    background-color: #2198e8;
+.button {
+    font: bold 20px Arial;
+    text-decoration: none;
+    background-color: #ebf2fa;
+    color: black;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+  }
+
+.weathersummary {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    margin: 20px;
+    padding: .4rem .4rem .2rem .4rem;
+    border: 1px solid black;
+    background: radial-gradient(#eee, #adc417);
+	box-shadow: 0 0 30px #111;
+    opacity: .8;
 }
 
 /*----------------.cards---------------*/
@@ -165,21 +193,18 @@ h2 {
     margin: .5rem;
     padding: 20px; 
     margin: 5px;
-    background-color: #f1f1f6;
+    background-color: #FEC5BB;
 }
 
-.cards img {
+/*.cards img {
     margin: 0.5rem;
     box-shadow: 0 0 30px black;
     max-width: 100%;
-}
+}*/
 
-.cards motto {
-    font-style: italic;
-    font-size: 18px;
-    
+.cards h2 {
+    color: black;
 }
-
 
 /*--------------article--------------*/
 
@@ -195,72 +220,119 @@ h2 {
     box-shadow: 0 0 20px #111;
 }
  
-.article p {
+.article_text {
     color: black;
 }
 
 /*------------------contact------------------*/
 
 .contactinfo {
-    color: #8B9EB7;
+    color: black;
     text-align: center;
     padding: 3rem;
-    background: #632A50;
+    background-color: #09acec;
+    margin: .5rem;
+    border: 1px solid #333333;
+    max-width: auto;
 }
 
 .contactinfo h3 {
     text-decoration: underline;
 }
 
-
 .social img {
     max-width: 50px;
     padding: 0.5rem;
 }
 
-.contactmap {
-    display: none;
-}
 
-/*----------Gallery-----------*/
-
-.galleryImages {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-figure {
-    grid-column: auto;
-    margin: .5rem;
-    padding: .5rem;
-}
-
-figure img {
-    filter: blur(0em);
-    transition: filter 0.5s;
+/*-------------Form-------------------*/
+form {
     margin: 0 auto;
-    border: 2px solid lightgray;
-    padding: 5px;
+    width: 90%;
+    max-width: 500px;
+  }
+    
+  form fieldset {
+    margin: 0.5rem;
+    border: 2px solid #01395a;
+    border-radius: 5px;
+    padding: 0.5rem 2%;
+  }  
+  form legend {
+    color: #01395a;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+  }
+  form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
 }
 
-figure img[data-src] {
-    filter: blur(5px);
+form label.top input, 
+form label.top datalist,
+form label select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
 }
 
-figcaption {
-    text-align: center;
-    color: #632A50;
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
 }
 
-.norm:hover {box-shadow: 0 0 50px #333;
+form label input:required {
+    border-left: #09acec solid 6px;
 }
 
+form label input:required:valid {
+    border-left: #FEC5BB solid 6px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: black;
+}
+
+#ratingvalue {
+    color: #632a50;
+    font-size: 1rem;
+}
+
+ .comment textarea {
+     display: block;
+     width: 100%;
+     height: 4rem;
+     max-width: 20rem;
+     border-radius: 4px;
+ }
+form input.submitBtn {
+    border: none;
+    background-color: #09acec;
+    color:black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+  
 /*-------------Footer-----------------*/
 
 footer {
-    background-color: #632A50;
-    color: #8B9EB7;
-    max-width: 840px;
+    background-color: #09acec;
+    color: black;
     margin: 0 auto;
     padding: 2px;
     }
@@ -271,7 +343,7 @@ footer {
     }
     
     .link {
-        color:#8b9eb7;
+        color:#fec5bb;
     }
 
     .link2 {
