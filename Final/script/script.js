@@ -16,13 +16,13 @@ fetch(requestURL)
         let h2 = document.createElement('h2');
         let address = document.createElement('address')
         let tel = document.createElement('p');
-        let website = document.createElement('p');
+        let website = document.createElement('a');
 
-        
+        website.setAttribute("href", businessdata[i].website);
         h2.textContent = businessdata[i].name + ' ';
         address.textContent = businessdata[i].address;
         tel.textContent = 'Tel:' + businessdata[i].tel;
-        website.textContent = 'Website' + ': ' + businessdata[i].website;
+        website.textContent = 'Website link';
         
         card.appendChild(h2);
         card.appendChild(address);
