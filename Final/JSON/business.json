@@ -46,7 +46,7 @@
         "city": "Changshu, Jiangsu 215500",
         "tel": "0512-52798688",
         "order": 6,
-        "imageurl": "http://www.cszsc.com.cn/"
+        "website": "http://www.cszsc.com.cn/"
       },
       {
         "name": "Dongsheng Dentistry",
@@ -54,7 +54,7 @@
         "city": "Changshu, Jiangsu 215500",
         "tel": "0512-52795111",
         "order": 7,
-        "imageurl": "http://www.dongshengkq.com/"
+        "website": "http://www.dongshengkq.com/"
       },
       {
         "name": "Sunhoo Dance School",
@@ -62,7 +62,7 @@
         "city": "Changshu, Jiangsu 215500",
         "tel": "0512-52818235",
         "order": 8,
-        "imageurl": "http://www.mysunhoo.com/"
+        "website": "http://www.mysunhoo.com/"
       },
       {
         "name": "85 Degree Bakery",
@@ -70,7 +70,7 @@
         "city": "Changshu, Jiangsu 215500",
         "tel": "0512-52823485",
         "order": 9,
-        "imageurl": "http://www.85coffee.com.cn/Store_Detail.aspx?id=198"
+        "website": "http://www.85coffee.com.cn/Store_Detail.aspx?id=198"
       },
       {
         "name": "Steven Stars Education",
@@ -78,7 +78,7 @@
         "city": "Changshu, Jiangsu 215500",
         "tel": "0512-82358640",
         "order": 10,
-        "imageurl": "http://www.sevenstar0512.com/engcctv.htm"
+        "website": "http://www.sevenstar0512.com/engcctv.htm"
       }
     ]
   }

@@ -1,39 +1,33 @@
 /*--------------JSON---------------*/
 
-// const requestURL = 'https://summercz.github.io/Final/business.json';
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'https://summercz.github.io/Final/JSON/business.json';
+// const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const towndata = jsonObject['towns'];
+    const businessdata = jsonObject['business'];
 
-    for (let i = 0; i < towndata.length; i++) {
-        if (towndata[i].name == "Fish Haven" || towndata[i].name == "Preston" || towndata[i].name == "Soda Springs") {
+    for (let i = 0; i < businessdata.length; i++) {
+        if (businessdata[i].name == "Hanhui Noodle Place" || businessdata[i].name == "Zhuzhu Tailor" || businessdata[i].name == "Dongsheng Dentistry") {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
-        let motto = document.createElement('motto')
-        let year = document.createElement('p');
-        let population = document.createElement('p');
-        let rainfall = document.createElement('p');
-        let image = document.createElement('img');
+        let address = document.createElement('address')
+        let tel = document.createElement('p');
+        let website = document.createElement('p');
+
         
-        h2.textContent = towndata[i].name + ' ';
-        motto.textContent = towndata[i].motto;
-        year.textContent = 'Year Founded' + ': ' + towndata[i].yearFounded;
-        population.textContent = 'Population' + ': ' + towndata[i].currentPopulation;
-        rainfall.textContent = 'Annual Rain Fall' + ': ' + towndata[i].averageRainfall;
-        image.setAttribute('src', 'images/'+ towndata[i].photo);
-        image.setAttribute('alt', towndata[i].name);
+        h2.textContent = businessdata[i].name + ' ';
+        address.textContent = businessdata[i].address;
+        tel.textContent = 'Tel:' + businessdata[i].tel;
+        website.textContent = 'Website' + ': ' + businessdata[i].website;
         
         card.appendChild(h2);
-        card.appendChild(motto);
-        card.appendChild(year);
-        card.appendChild(population);
-        card.appendChild(rainfall);
-        card.appendChild(image);
+        card.appendChild(address);
+        card.appendChild(tel);
+        card.appendChild(website);
         document.querySelector('div.cards').appendChild(card);
     }
 }
